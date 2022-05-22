@@ -1,0 +1,91 @@
+==== [blue]#Diagramme de classes#
+
+.UML Diagramme de classes
+
+[uml,file="uml-example.png"]
+--
+abstract class AbstractList
+abstract AbstractCollection
+interface List
+interface Collection
+
+List <|-- AbstractList
+Collection <|-- AbstractCollection
+
+Collection <|- List
+AbstractCollection <|- AbstractList
+AbstractList <|-- ArrayList
+
+class ArrayList {
+  Object[] elementData
+  size()
+}
+
+enum TimeUnit {
+  DAYS
+  HOURS
+  MINUTES
+}
+
+annotation SuppressWarnings
+--
+
+==== [blue]#Formules mathématiques#
+[math,file="mathml-formula.png"]
+--
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>x</mi>
+  <mo>=</mo>
+  <mrow>
+    <mfrac>
+      <mrow>
+        <mo>&#x2212;</mo>
+        <mi>b</mi>
+        <mo>&#xB1;</mo>
+        <msqrt>
+          <msup>
+            <mi>b</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>&#x2212;</mo>
+          <mn>4</mn>
+          <mi>a</mi>
+          <mi>c</mi>
+        </msqrt>
+      </mrow>
+      <mrow>
+        <mn>2</mn>
+        <mi>a</mi>
+      </mrow>
+    </mfrac>
+  </mrow>
+  <mtext>.</mtext>
+</math>
+--
+
+==== [blue]#Arborescence fichiers#
+[tree,file="tree-view.png"]
+--
+#src
+##main
+###java
+####com
+#####kodcu
+######App.java
+###resources
+####css
+#####style.css
+####js
+#####script.js
+####images
+#####image.png
+--
+
+[chart,pie,file="secim-2014-pie.png",opt="title=2020 Exemple stats"]
+--
+AKP,  45.6, orange
+CHP,  27.8,red
+MHP,  15.2
+BDP,  4.2
+SP,  2
+--
